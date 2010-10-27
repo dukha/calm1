@@ -1,0 +1,35 @@
+html, body {
+  background-color: #BBBBBB;
+  height: 100%;
+  margin: 0px;
+  padding: 0px; }
+
+#bigcontainer {
+  min-height: 100%;
+  /*position: relative;*/ }
+
+#appheader {
+  margin: 2px; }
+
+#midcontainer {
+  margin: 2px;
+  padding-bottom: 30px;
+  width: 100%; }
+
+#appmenu {
+  margin: 2px;
+  float: left;
+  width: 100px; }
+
+#appmain {
+  /*position: relative;*/
+  left: 102px;
+  margin: 2px; }
+
+#appfooter {
+  clear: left;
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  margin: 2px;
+  bottom: 0; }

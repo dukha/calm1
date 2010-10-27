@@ -5,10 +5,47 @@
   <%= stylesheet_link_tag :all %>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
+  <%= stylesheet_link_tag 'custom2.css', :media => 'screen' %>
+  <style media="screen" type="text/css"> 
+  	
+	div, td{
+		border-style: solid;
+		border-width:1px;
+		border-color:red;
+	}
+  </style>
 </head>
 <body>
-
-<%= yield %>
-
+ 
+    <div id = "bigcontainer" style= "">
+		<div id="appheader" style= "border-color:red;">
+			<%= render 'layouts/header' %>
+		</div>
+		 <!-- <div id = "midcontainer" style= "border-color:green;">
+		    <div id = "appmenu" style= "">
+		    	<%= render 'layouts/menu' %>
+		    	
+			</div>
+			<div id="spacer" style="border-color:black;"/>
+				<div id="appmain">
+                  <%= yield %>
+				 </div> 
+			
+	    </div>
+		-->
+		<table id ="appmaintable" >
+			<tr>
+				<td id="appmenutd" >
+					<%= render 'layouts/menu' %>
+				</td>
+				<td id="appmaintd">
+					<%=yield%>
+				</td>
+			</tr>
+		</table>
+	    <div id="appfooter"  style= "">
+	    	<%= render 'layouts/footer' %>
+	    </div>
+	</div>
 </body>
 </html>

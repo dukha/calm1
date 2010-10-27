@@ -28,7 +28,11 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 # group :development, :test do
 #   gem 'webrat'
 gem 'will_paginate', '3.0.pre2'
+# also installs sass
+gem 'haml'
+#  to install jquery-ujs: $rails generate jquery:install --ui
 
+gem 'jquery-rails'
 group :development do
   gem 'rspec-rails', '2.0.0.beta.22'
   # note that annotate-models gives an executable file of annotate. There is another gem 'annotate' which seems to do something similar
